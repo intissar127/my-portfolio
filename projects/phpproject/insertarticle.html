@@ -1,0 +1,45 @@
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      background-image: linear-gradient(
+          to right,
+          rgba(250, 0, 0, 0.6),
+          rgba(200, 0, 0, 0.1)
+        ),
+        url("bg.jpg");
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<html>
+  <form action="insertarticle.php" method="POST">
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">libelle</span>
+      <input type="text" name="libelle" />
+    </div>
+
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">codeabarre</span>
+      <input type="number" name="codeabarre" />
+    </div>
+
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">prix</span>
+      <input type="number" name="prix" />
+    </div>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">categorieid</span>
+      <input type="number" name="categorieid" />
+    </div>
+    <input type="submit" value="INSERT" />
+  </form>
+</html>
